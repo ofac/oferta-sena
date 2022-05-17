@@ -32,7 +32,7 @@
             Jornada noche de 6:00 a 10:00 p.m. 
             <br>
             <div class="flex flex-row mt-4">
-              <a href="" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
+              <a href="" data-num="0" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -66,7 +66,7 @@
             Jornada Nocturna 6:00 p.m. a 12:00 p.m.
             <br>
             <div class="flex flex-row mt-4">
-              <a href="" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
+              <a href="" data-num="1" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -101,7 +101,7 @@
           Jornada Diurna 8:00 a.m. a 4:00 p.m.
           <br>
           <div class="flex flex-row mt-4">
-            <a href="" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
+            <a href="" data-num="2" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -135,7 +135,7 @@
           Jornada Diurna 8:00 a.m. a 4:00 p.m.
           <br>
           <div class="flex flex-row mt-4">
-            <a href="" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
+            <a href="" data-num="3" class="modal-open bg-[#333] text-white px-4 py-1 rounded-lg border-2 border-white hover:scale-105 transition-all duration-500 flex gap-1">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -160,63 +160,149 @@
             Regresar
         </a>
         
-        <!--Modal-->
+        <!--Modal 0-->
         <div class="modal opacity-0 transition-opacity ease-in duration-100 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
-            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
-
+            <div data-overlay="0" class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
             <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-
-            <!-- Add margin if you want to see some of the overlay behind the modal-->
             <div class="modal-content py-4 text-left px-6">
-                <!--Title-->
                 <div class="flex justify-between items-center pb-3">
-                <p class="text-2xl font-bold">Auxiliar</p>
-                <div class="modal-close cursor-pointer z-50">
+                <p class="text-2xl font-bold">Perfil del Egresado</p>
+                <div data-closet="0" class="modal-closet cursor-pointer z-50">
                     <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                     <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
                     </svg>
                 </div>
                 </div>
-
-                <!--Body-->
-                <p class="text-xl">Auxiliar en XYZ</p>
+                <p class="text-xl">Auxiliar en Información Turística</p>
                 <hr>
-                <p class="mt-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus deleniti laudantium soluta expedita sit eligendi vel perspiciatis, distinctio nam nemo aliquid aperiam aspernatur asperiores consequuntur suscipit adipisci iste officia a.
+                <p class="mt-4 text-justify">
+                  Si deseas conocer tu región, realizar recorridos turísticos para explorar el patrimonio cultural y natural, disfrutar de la biodiversidad de nuestro territorio y dar a conocer nuestros atractivos turísticos, entonces debes estudiar Auxiliar en Información Turística, en este programa desarrollarás habilidades para brindar información de destinos, atender turistas de diferentes regiones del país y el mundo, además de asesorar la comercialización de paquetes turísticos. 
                 </p>
-
-                <!--Footer-->
                 <div class="flex justify-end pt-2">
-                <button class="modal-close px-4 bg-[#ff6b00] p-3 rounded-lg text-white hover:bg-[#333]">Cerrar</button>
+                <button data-close="0" class="modal-close px-4 bg-[#ff6b00] p-3 rounded-lg text-white hover:bg-[#333]">Cerrar</button>
                 </div>
-
             </div>
             </div>
         </div>
+        <!-- - - - - - - - - - - - - - - - - - - - - - -  -->
+        <!--Modal 1-->
+        <div class="modal opacity-0 transition-opacity ease-in duration-100 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+          <div data-overlay="1" class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+          <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+          <div class="modal-content py-4 text-left px-6">
+              <div class="flex justify-between items-center pb-3">
+              <p class="text-2xl font-bold">Perfil del Egresado</p>
+              <div data-closet="1" class="modal-closet cursor-pointer z-50">
+                  <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                  </svg>
+              </div>
+              </div>
+              <p class="text-xl">Auxiliar en Información Turística</p>
+              <hr>
+              <p class="mt-4 text-justify">
+                Si deseas conocer tu región, realizar recorridos turísticos para explorar el patrimonio cultural y natural, disfrutar de la biodiversidad de nuestro territorio y dar a conocer nuestros atractivos turísticos, entonces debes estudiar Auxiliar en Información Turística, en este programa desarrollarás habilidades para brindar información de destinos, atender turistas de diferentes regiones del país y el mundo, además de asesorar la comercialización de paquetes turísticos. 
+              </p>
+              <div class="flex justify-end pt-2">
+              <button data-close="1" class="modal-close px-4 bg-[#ff6b00] p-3 rounded-lg text-white hover:bg-[#333]">Cerrar</button>
+              </div>
+          </div>
+          </div>
+      </div>
+      <!-- - - - - - - - - - - - - - - - - - - - - - -  -->
+      <!--Modal 2-->
+      <div class="modal opacity-0 transition-opacity ease-in duration-100 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+        <div data-overlay="2" class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div class="modal-content py-4 text-left px-6">
+            <div class="flex justify-between items-center pb-3">
+            <p class="text-2xl font-bold">Perfil del Egresado</p>
+            <div data-closet="2" class="modal-closet cursor-pointer z-50">
+                <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                </svg>
+            </div>
+            </div>
+            <p class="text-xl">Auxiliar en Promoción de Seguridad Alimentaria</p>
+            <hr>
+            <p class="mt-4 text-justify">
+              No se encuentra en el diseño curricular, se consultará al Gestor de red:  Jorge Ivan Tovar
+            </p>
+            <div class="flex justify-end pt-2">
+            <button data-close="2" class="modal-close px-4 bg-[#ff6b00] p-3 rounded-lg text-white hover:bg-[#333]">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- - - - - - - - - - - - - - - - - - - - - - -  -->
+      <!-- - - - - - - - - - - - - - - - - - - - - - -  -->
+      <!--Modal 3-->
+      <div class="modal opacity-0 transition-opacity ease-in duration-100 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center">
+        <div data-overlay="3" class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+        <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div class="modal-content py-4 text-left px-6">
+            <div class="flex justify-between items-center pb-3">
+            <p class="text-2xl font-bold">Perfil del Egresado</p>
+            <div data-closet="3" class="modal-closet cursor-pointer z-50">
+                <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                </svg>
+            </div>
+            </div>
+            <p class="text-xl">Auxiliar en Cultivo de Flores, Forrajes y Ornamentales</p>
+            <hr>
+            <p class="mt-4 text-justify">
+              En Colombia el cultivo de flores es una de las actividades agrícolas más importantes del mercado, el cual requiere constantemente mano de obra calificada, por este motivo estudiar el Auxiliar en Cultivo de Flores, Forrajes y Ornamentales se traduce en oportunidades de empleo. Fórmate en este programa y desarrolla habilidades para producir flores tropicales, así como todo lo relacionado con poscosecha de follajes y ornamentales según requerimientos de mercado, entre otros aspectos relacionados con esta actividad económica.
+            </p>
+            <div class="flex justify-end pt-2">
+            <button data-close="3" class="modal-close px-4 bg-[#ff6b00] p-3 rounded-lg text-white hover:bg-[#333]">Cerrar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- - - - - - - - - - - - - - - - - - - - - - -  -->
 
 
     <script>
-        var openmodal = document.querySelectorAll(".modal-open");
+        var openmodal = document.querySelectorAll(".modal-open")
         for (var i = 0; i < openmodal.length; i++) {
             openmodal[i].addEventListener("click", function (event) {
-                event.preventDefault();
-                toggleModal();
+                event.preventDefault()
+                toggleModal(this.dataset.num)
             });
         }
 
-        const overlay = document.querySelector(".modal-overlay");
-        overlay.addEventListener("click", toggleModal);
-
-        var closemodal = document.querySelectorAll(".modal-close");
-        for (var i = 0; i < closemodal.length; i++) {
-            closemodal[i].addEventListener("click", toggleModal);
+        const overlay = document.querySelectorAll(".modal-overlay")
+        for (var i = 0; i < overlay.length; i++) {
+          overlay[i].addEventListener("click", function (event) {
+                event.preventDefault()
+                toggleModal(this.dataset.overlay)
+            });
         }
 
-        function toggleModal() {
-            const body = document.querySelector("body");
-            const modal = document.querySelector(".modal");
-            modal.classList.toggle("opacity-0");
-            modal.classList.toggle("pointer-events-none");
+        var closemodalt = document.querySelectorAll(".modal-closet");
+        for (var i = 0; i < closemodalt.length; i++) {
+          closemodalt[i].addEventListener("click", function (event) {
+                event.preventDefault()
+                toggleModal(this.dataset.closet)
+            });
+        }
+
+        
+        var closemodal = document.querySelectorAll(".modal-close");
+        for (var i = 0; i < closemodal.length; i++) {
+          closemodal[i].addEventListener("click", function (event) {
+                event.preventDefault()
+                toggleModal(this.dataset.close)
+            });
+        }
+
+        function toggleModal(num = 0) {
+            const body  = document.querySelector("body");
+            const modal = document.querySelectorAll(".modal");
+
+            modal[num].classList.toggle("opacity-0");
+            modal[num].classList.toggle("pointer-events-none");
             body.classList.toggle("modal-active");
         }
        </script> 
